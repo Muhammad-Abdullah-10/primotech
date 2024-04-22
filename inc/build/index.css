@@ -1,0 +1,17 @@
+.banner-home-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar-brand {
+  background-color: rgba(151, 25, 25, 0);
+  padding: 1.0625em 1.0625em;
+  transition: 0.4s;
+}
+.navbar-brand img {
+  padding: 0px;
+  max-width: 16em;
+  max-height: 3em;
+}
+
+/*# sourceMappingURL=index.css.map */
