@@ -1,17 +1,145 @@
-.banner-home-wrapper {
-  width: 100vw;
-  height: 100vh;
+@font-face {
+  font-family: "montreg";
+  font-weight: 500;
+  font-style: normal;
+  src: url(/inc/fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.woff2);
+}
+/* header */
+header {
+  padding: 0px !important;
+  overflow: hidden;
 }
 
-.navbar-brand {
-  background-color: rgba(151, 25, 25, 0);
-  padding: 1.0625em 1.0625em;
+.navbar {
+  padding: 0px !important;
+  max-height: 72px;
+  background: #333;
+}
+.navbar .navbar-brand {
+  background-color: #e6e6e6;
+  padding: 5px 15px;
   transition: 0.4s;
 }
-.navbar-brand img {
+.navbar .navbar-brand img {
   padding: 0px;
   max-width: 16em;
   max-height: 3em;
 }
+.navbar .navbar-nav {
+  width: 65% !important;
+}
+.navbar .navbar-nav li {
+  padding: 0 15px;
+}
+.navbar .navbar-nav li a {
+  font-family: montreg, sans-serif !important;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 0.75em 0 0.75em 0;
+}
+.navbar .rightbar-sec {
+  height: 70px;
+  width: 350px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.navbar .rightbar-sec .speak-to-expert {
+  height: 70px;
+  max-width: 200px;
+  padding: 0 1.25em;
+  background: #fff;
+  display: flex;
+  transition: 0.5s;
+}
+.navbar .rightbar-sec .speak-to-expert a {
+  align-self: center;
+  color: #e3204a;
+  font-size: 1em;
+  font-weight: 700;
+}
+.navbar .rightbar-sec .whatsapp-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 50px;
+  background: #e3204a;
+}
+.navbar .rightbar-sec .whatsapp-nav :hover {
+  left: 0;
+  width: 100%;
+}
+.navbar .rightbar-sec .whatsapp-nav :hover ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  left: auto;
+  transition: 0.5s;
+}
+.navbar .rightbar-sec .whatsapp-nav :hover svg path {
+  fill: #e3204a;
+  transition: 0.5s;
+}
+.navbar .rightbar-sec .whatsapp-nav .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .rightbar-sec .whatsapp-nav svg {
+  width: 1.625em;
+  z-index: 1;
+}
+.navbar .rightbar-sec .whatsapp-nav svg path {
+  transition: 0.5s;
+}
+.navbar .rightbar-sec .callnow-nav {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 50px;
+  background: #e3204a;
+}
+.navbar .rightbar-sec .callnow-nav .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .rightbar-sec .callnow-nav svg {
+  width: 1.625em;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .logo-desktop {
+    display: none;
+  }
+  .logo-desktop img {
+    display: none;
+  }
+}
+/* header */
+
+
+/* Banner */
+.banner-home-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: red;
+}
+
+/* Banner */
 
 /*# sourceMappingURL=index.css.map */
