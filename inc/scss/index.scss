@@ -1,12 +1,13 @@
-@use 'typography';
-
+@use "typography";
+// @use 'magicMouse';
+@use "slickTest";
 .banner-home-wrapper {
   width: 100vw;
   height: 1 0vh;
 }
 header {
-    padding: 0px !important;
-    overflow: hidden;
+  padding: 0px !important;
+  overflow: hidden;
 }
 .navbar {
   padding: 0px !important;
@@ -25,11 +26,11 @@ header {
   }
   .navbar-nav {
     width: 65% !important;
-}
+  }
   .navbar-nav li {
     padding: 0 15px;
     a {
-     font-family: montreg, sans-serif !important;
+      font-family: montreg, sans-serif !important;
       font-size: 1em;
       font-weight: 600;
       line-height: 1;
@@ -67,7 +68,7 @@ header {
       }
     }
     .whatsapp-nav {
-        position: relative;
+      position: relative;
       // max-height: 50px;
       display: flex;
       justify-content: center;
@@ -75,25 +76,25 @@ header {
       width: 50px;
       background: #e3204a;
 
-      :hover{
+      :hover {
         left: 0;
         width: 100%;
-        ::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 0;
-            height: 100%;
-            background: #fff;
-            left: auto;
-            transition: .5s
+        ::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 0;
+          height: 100%;
+          background: #fff;
+          left: auto;
+          transition: 0.5s;
         }
         svg {
-            path {
-                fill: #e3204a;
-                transition: .5s
-            }
+          path {
+            fill: #e3204a;
+            transition: 0.5s;
+          }
         }
       }
       .icon {
@@ -104,26 +105,26 @@ header {
       svg {
         width: 1.625em;
         z-index: 1;
-        path{
-            transition: .5s
+        path {
+          transition: 0.5s;
         }
       }
     }
-    .callnow-nav{
+    .callnow-nav {
+      display: flex;
+      justify-content: center;
+      height: 70px;
+      width: 50px;
+      background: #e3204a;
+      .icon {
         display: flex;
+        align-items: center;
         justify-content: center;
-        height: 70px;
-        width: 50px;
-        background: #e3204a;
-        .icon {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        svg {
-          width: 1.625em;
-          z-index: 1;
-        }
+      }
+      svg {
+        width: 1.625em;
+        z-index: 1;
+      }
     }
   }
 }
@@ -134,5 +135,101 @@ header {
     img {
       display: none;
     }
+  }
+}
+
+// SliderBannerArea
+
+.slider-area {
+  width: 100%;
+  height: auto;
+  background: #3d1b4f;
+  padding: 50px 0;
+  .container-fluid {
+    display: flex;
+  }
+
+  .left-side-slick-slider {
+    // background: red;
+    height: 600px;
+    .outline_text {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px #b9b9ba;
+      text-transform: capitalize;
+      word-break: break-word;
+      font-size: 7em;
+      font-family: sans-serif;
+      font-weight: 700;
+      background: transparent;
+      z-index: 1;
+    }
+    .container-fluid{
+      display: flex;
+      align-items: center;
+
+      .slider-nav{
+        padding-left: 50px;
+      }
+    }
+    
+  }
+  // .left-side-slick-slider .container-fluid:nth-child(2) {
+  //   max-width: 400px;
+  // }
+  // .slider-heading-box {
+  //   max-width: 400px;
+  // }
+
+  .mouse {
+    margin: 0 auto;
+    display: block;
+    border-radius: 3.125em;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    opacity: 0.4;
+    margin: 0 25px;
+    padding: 0 5px;
+    .move {
+      position: absolute;
+      background-color: #fff;
+      height: 0.25em;
+      width: 0.25em;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: move 2s linear infinite;
+      opacity: 0.8;
+    }
+  }
+}
+
+.left-side-slick-slider {
+  .slick-vertical .slick-slide h3{
+    background:transparent ;
+    color: #fff;
+    font-weight:400;
+    font-size: 28px;
+    line-height: 40px;
+    padding: 25px 0;
+  }
+}
+
+// Animations
+@keyframes move {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(-50%, 1.5625em);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, 3em);
+    opacity: 0;
   }
 }
