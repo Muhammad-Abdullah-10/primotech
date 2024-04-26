@@ -214,7 +214,42 @@ header {
     line-height: 40px;
     padding: 25px 0;
   }
+  .slider-heading-box.slick-slide.slick-current.slick-active h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
 }
+
+.wrapper-rightslide-start{
+  .desc-wrapper{
+    p{
+      color: #fff;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .list-wrapper{
+      display: flex;
+      flex-direction: row;
+      
+      ul{
+        width: 33%;
+        
+        li{
+          list-style: disc;
+          color: #fff;
+          ::marker{
+            color: #fff;
+          }
+          a{
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 // Animations
 @keyframes move {
@@ -233,3 +268,5 @@ header {
     opacity: 0;
   }
 }
+
+
