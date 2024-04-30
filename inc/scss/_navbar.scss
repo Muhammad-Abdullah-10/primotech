@@ -1,0 +1,136 @@
+.banner-home-wrapper {
+    width: 100vw;
+    height: 1 0vh;
+  }
+  header {
+    padding: 0px !important;
+    overflow: hidden;
+  }
+  .navbar {
+    padding: 0px !important;
+    max-height: 72px;
+    background: #333;
+  
+    .navbar-brand {
+      background-color: #e6e6e6;
+      padding: 5px 15px;
+      transition: 0.4s;
+      img {
+        padding: 0px;
+        max-width: 16em;
+        max-height: 3em;
+      }
+    }
+    .navbar-nav {
+      width: 65% !important;
+    }
+    .navbar-nav li {
+      padding: 0 15px;
+      a {
+        font-family: montreg, sans-serif !important;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.4s;
+        padding: 0.75em 0 0.75em 0;
+      }
+    }
+    .rightbar-sec {
+      height: 70px;
+      width: 350px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      .speak-to-expert {
+        height: 70px;
+        max-width: 200px;
+        padding: 0 1.25em;
+        background: #fff;
+        // background:#e3204a ;
+        display: flex;
+        //   align-items: center;
+        transition: 0.5s;
+        a {
+          align-self: center;
+          // height: 70px;
+          color: #e3204a;
+          font-size: 1em;
+          font-weight: 700;
+        }
+      }
+      .whatsapp-nav {
+        position: relative;
+        // max-height: 50px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        width: 50px;
+        background: #e3204a;
+  
+        :hover {
+          left: 0;
+          width: 100%;
+          ::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            background: #fff;
+            left: auto;
+            transition: 0.5s;
+          }
+          svg {
+            path {
+              fill: #e3204a;
+              transition: 0.5s;
+            }
+          }
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        svg {
+          width: 1.625em;
+          z-index: 1;
+          path {
+            transition: 0.5s;
+          }
+        }
+      }
+      .callnow-nav {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        width: 50px;
+        background: #e3204a;
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        svg {
+          width: 1.625em;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .logo-desktop {
+      display: none;
+      img {
+        display: none;
+      }
+    }
+  }

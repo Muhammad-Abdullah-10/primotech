@@ -7,6 +7,8 @@
        
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
+import LocomotiveScroll from 'node_modules/locomotive-scroll';
+
 gsap.from(".navbar-nav", { opacity: 0, y: '-100%', duration: 1 ,ease : 'back.in'});
 gsap.from(".logo-desktop", { opacity: 0, x: '-100%', duration: 1 ,ease : 'power1'});
 gsap.from(".nav-item" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})  
@@ -39,70 +41,6 @@ gsap.from(".nav-item" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})
 
 // swiper.slideNext();
 // swiper.speed();
-
-
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav',
-    verticalScrolling: true,
-    vertical: true
-  });
-//   $('.slider-for').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     asNavFor: '.slider-nav',
-//     dots:false,
-//     arrows:false,
-//     draggable:true,
-//     swipe: true,
-//     touchMove: true,
-//     vertical: true,
-//     verticalScrolling: true,
-//     focusOnSelect: true,
-//     variableWidthL:true,
-//     initialSlide:3,
-//     verticalSwiping:true
-//   });
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots:false,
-    arrows:false,
-    draggable:true,
-    swipe: true,
-    touchMove: true,
-    vertical: true,
-    verticalScrolling: true,
-    focusOnSelect: true,
-    variableWidthL:true,
-    // initialSlide:3,
-    infinite:false,
-    verticalSwiping:true
-  });
-//   onmousewheel
-  // const sliderNav = $(".slider-nav");
-  // sliderNav.on('wheel', (function(e) {
-  //   e.preventDefault();  
-  
-  //   if (e.originalEvent.deltaY < 0) {
-  //     $(this).slick('slickNext');
-  //   } else {
-  //     $(this).slick('slickPrev');
-  //   }
-  // }));
-  
-  //   onmousewheel
- 
-  $('a[data-slide]').click(function(e) {
-    e.preventDefault();
-    var slideno = $(this).data('slide');
-    $('.slider-nav').slick('slickGoTo', slideno - 1);
-  });
-
 
 
   // const swiperV = new Swiper('.swiper-vertical', {
