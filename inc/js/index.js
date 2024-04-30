@@ -40,6 +40,7 @@ gsap.from(".nav-item" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})
 // swiper.slideNext();
 // swiper.speed();
 
+
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -83,16 +84,16 @@ $('.slider-for').slick({
     verticalSwiping:true
   });
 //   onmousewheel
-  const sliderNav = $(".slider-nav");
-  sliderNav.on('wheel', (function(e) {
-    e.preventDefault();
+  // const sliderNav = $(".slider-nav");
+  // sliderNav.on('wheel', (function(e) {
+  //   e.preventDefault();  
   
-    if (e.originalEvent.deltaY < 0) {
-      $(this).slick('slickNext');
-    } else {
-      $(this).slick('slickPrev');
-    }
-  }));
+  //   if (e.originalEvent.deltaY < 0) {
+  //     $(this).slick('slickNext');
+  //   } else {
+  //     $(this).slick('slickPrev');
+  //   }
+  // }));
   
   //   onmousewheel
  
@@ -101,3 +102,44 @@ $('.slider-for').slick({
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
+
+
+
+  // const swiperV = new Swiper('.swiper-vertical', {
+  //   // Optional parameters
+  //   direction: 'horizontal',
+  //   loop: true,
+
+  //   // If we need pagination
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+
+  //   // And if we need scrollbar
+  //   scrollbar: {
+  //     el: '.swiper-scrollbar',
+  //   },
+  // });
+  
+
+  // Assuming swiper is your Swiper instance
+
+  // Get the active slide index
+  // const activeIndex = swiper.activeIndex;
+  // console.log(activeIndex);
+
+  // Get the active slide element
+  // const activeSlide = swiper.slides[activeIndex];
+  // console.log( swiper.slides);
+
+  // Update the data attribute of the active slide element
+  // activeSlide.setAttribute('data-my-attribute', 'new-value');
+  // var swiperleft = document.getElementsByClassName('swiper-slide-active');
+  // console.log(swiperleft);
+//  activeIndex.getAttribute('data-val');
