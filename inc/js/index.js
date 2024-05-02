@@ -164,6 +164,57 @@ verticalSwiper.controller.control = horizontalSwiper;
   // Initialize vertical swiper
 // Test Code
 
+// Our Work
+var ourWork = new Swiper(".ourWork", {
+  watchSlidesProgress: true,
+  slidesPerView: 4,
+  breakpoints: {
+     // when window width is >= 250px
+     250: {
+      slidesPerView: 1,
+      spaceBetween:0
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 991px
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 1201px
+    1201: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
+// Our Work
+
+// Logo Slider
+var logoSlider = new Swiper(".logoSlider", {
+  slidesPerView: 2,
+      speed: 2000,
+      grid: { rows: 1 },
+      scrollbar: {
+        el: ".collabCompanies__Slider .swiper-scrollbar",
+        draggable: true,
+      },
+      breakpoints: {
+        576: { slidesPerView: 3, grid: { rows: 2 } },
+        768: { slidesPerView: 4, grid: { rows: 2 } },
+        1024: { slidesPerView: 7, grid: { rows: 2 } },
+      },
+});
+// Logo Slider
+
 });
 
 
