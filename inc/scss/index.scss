@@ -1,11 +1,14 @@
-@use "typography";
+// @use "typography";
 // @use 'magicMouse';
-@use "slickTest";
-
+// @use "slickTest";
+@use "homeBanner";
 @use "navbar";
 @use "bannerSwiperHomeImages";
-// SliderBannerArea
 
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap);
+
+// SliderBannerArea
 .slider-area {
   width: 100%;
   height: auto;
@@ -16,7 +19,6 @@
   }
 
   .left-side-slick-slider {
-    // background: red;
     height: 600px;
     .outline_text {
       -webkit-text-fill-color: transparent;
@@ -265,9 +267,13 @@ div#swiper-wrapper-1e10a7b644581ccac {
 //   height: 100%;
 //   object-fit: cover;
 
+
+
 @media (max-width: 767px) {
   .d-mobile-none {
     display: none;
   }
 }
+
+
 

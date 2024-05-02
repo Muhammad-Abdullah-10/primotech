@@ -4,7 +4,7 @@
   "description": "\"Primo Tech\"",
   "main": "index.js",
   "scripts": {
-    "start": "wp-scripts start inc/js/index ",
+    "start": "wp-scripts start inc/js/index.js ",
     "dev": "wp-scripts start",
     "devFast": "wp-scripts start",
     "test": "echo \"Error: no tst specified\" && exit 1",

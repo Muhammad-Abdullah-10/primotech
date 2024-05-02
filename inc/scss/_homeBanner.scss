@@ -1,0 +1,163 @@
+
+// Home Banner
+.banner-home-wrapper{
+    width: 100vw;
+    height: 950px;
+    background: url("../img/webdevelopment-bg.webp");
+    background-size:cover ;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+    padding: 0px;
+    .absoulte-overlay-banner{
+      position: absolute;
+      width: 100vw;
+      height: 950px;
+      background-color: #00000091; 
+      z-index: 2;
+    }
+    .content-row-wrapper-banner{
+      height: 950px;
+      padding: 0px;
+      align-items: center;
+      .row{
+        height: 750px;  
+        display: flex;
+        z-index: 1;
+        // padding: 5% 0% 5% 8%; 
+      
+        .col-xl-5{
+          align-self: flex-end;
+          .anchor-wrapper{
+            display: flex;
+            padding-left: 10%;
+          }
+          .anchor-wrapper:hover{
+            text-decoration: none;
+          }
+          .home-banner-desc{
+            p{
+                font-family: Montserrat, sans-serif;
+                padding-left: 10%;
+                font-size: 1em;
+                font-family: Montserrat , sans-serif;
+                font-weight: 400;
+                color: #fff;
+                line-height: 1.25em;
+            }
+            // max-width: 650px;
+            
+            .arrow-anchor{
+                position: relative;
+                display: flex;
+                align-items: center;
+                span{
+                    color: #fff;
+                    font-size: 1.25em;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                    margin: 0 0.75em 0 0;
+                    font-family: Montserrat, sans-serif;
+                }
+                .img-wrapper{
+                    width: 3em;
+                    height: 3em;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    background: #1970e9;
+                    transition: 0.4s;
+                    svg {
+                        width: 1em;
+                        transform: rotate(0deg);
+                        transition: 0.4s;
+                    }
+          
+                }
+                &:hover .img-wrapper svg{
+                    transform: rotate(45deg);
+                     path{
+                        fill: #fff;
+                        transition: 0.4s
+                    }
+                  }
+            }
+                
+          }
+        }
+        .col-xl-7{
+          align-self: center;
+          .home-banner-heading{
+            font-family: Montserrat, sans-serif;
+            padding-right: 5%;
+            background: transparent;
+            color: #fff;
+            font-size: 4em;
+            font-weight: 700;
+            line-height: .88;
+            letter-spacing: -.03em;
+            text-transform: uppercase;
+            text-align: right;
+            // width: 65%;
+            .color-diff-banner{
+              background: linear-gradient(200deg, #386cb4     , #214d93  100%);
+              background-size: 200% 200%;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              -webkit-animation: gradientAnimation 5s linear infinite;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  @media(min-width:992px) and (max-width:1199px){
+    .banner-home-wrapper{
+        max-height: 650px;
+        .content-row-wrapper-banner{
+            max-height: 650px;
+            .row{
+                max-height: 650px;
+                .col-xl-5{
+                    padding-bottom: 10%;
+                }
+            }
+            // max-height: 650px;
+            
+        }
+    }
+  }
+  @media(max-width:991px){
+    .banner-home-wrapper{
+      max-height: 550px;
+      padding: 0 5%;
+    .content-row-wrapper-banner{
+      max-height: 550px;
+      .row{
+        max-height: 550px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        .col-xl-5{
+          align-items: flex-start;
+        .home-banner-desc{
+          p{padding-left: 0px;}
+        }
+        .anchor-wrapper{
+            padding-left: 0;
+        }
+        }
+        .col-xl-7{
+          .home-banner-heading {
+            text-align: left !important;
+            font-size: 3em;
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+  }
+  // Home Banner
