@@ -470,8 +470,10 @@ div#swiper-wrapper-1e10a7b644581ccac {
       .logo-slider-heading{
         color: #333;
         width: auto;
+        font-size: 3em;
         padding-bottom: 50px;
         span{
+          // font-size: 1.5em;
           display: block;
           font-weight: 500;
           color: #214d93;
@@ -483,16 +485,37 @@ div#swiper-wrapper-1e10a7b644581ccac {
       
       }
       .logoSlider{
-        height: 300px;
+        position: relative;
+        height: 420px;
         .swiper-slide:nth-child(even){
+          display: flex;
+            justify-self: center;
+            align-self: center;
           height: 150px;
           width: 150px;
-          background: #000;
+          
+          // background: #000;
         }
         .swiper-slide:nth-child(odd){
+          display: flex;
+            justify-self: center;
+            align-self: center;
           height: 150px;
           width: 150px;
-          background: #214d93;
+          
+          // background: #214d93;
+        }
+        .swiper-slide{
+          display: flex;
+          height: auto;
+          justify-content: center;
+          align-items: center;
+          img{  
+            max-width: 150px;
+            max-height: 150px;
+            object-fit: cover;
+            background-position: center;
+          }
         }
         .slide-progress-bar{   
             margin-top: 20px;       
@@ -500,8 +523,35 @@ div#swiper-wrapper-1e10a7b644581ccac {
             width: 40%;
             margin: 0 auto;
             padding: 3em 0 0 0;
-
         }
+        .progress-bar {
+          display: block;
+          position: relative;
+          height: 10px;
+          width: 50%;
+          background-color: #000;
+          margin: auto;
+          .progress-bar-fill{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 40%; /* Initially filled halfway */
+            background: #007bff;
+          }
+       }
+       .swiper-pagination-progressbar {
+        position: absolute;
+        top: 400px; /* Adjust this value to position the progress bar */
+        left: 30%;
+        width: 40%;
+        height: 4px; /* Adjust the height of the progress bar */
+        background: #ccc; /* Background color of the progress bar container */
+      }
+      .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        height: 100%;
+        background: #007bff; /* Background color of the progress bar */
+      }
       }
     }
   }

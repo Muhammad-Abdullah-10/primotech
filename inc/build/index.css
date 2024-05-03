@@ -775,6 +775,7 @@ div#swiper-wrapper-1e10a7b644581ccac {
 .logo-slider-wrapper .container .row .logo-slider-heading {
   color: #333;
   width: auto;
+  font-size: 3em;
   padding-bottom: 50px;
 }
 .logo-slider-wrapper .container .row .logo-slider-heading span {
@@ -783,17 +784,34 @@ div#swiper-wrapper-1e10a7b644581ccac {
   color: #214d93;
 }
 .logo-slider-wrapper .container .row .logoSlider {
-  height: 300px;
+  position: relative;
+  height: 420px;
 }
 .logo-slider-wrapper .container .row .logoSlider .swiper-slide:nth-child(even) {
+  display: flex;
+  justify-self: center;
+  align-self: center;
   height: 150px;
   width: 150px;
-  background: #000;
 }
 .logo-slider-wrapper .container .row .logoSlider .swiper-slide:nth-child(odd) {
+  display: flex;
+  justify-self: center;
+  align-self: center;
   height: 150px;
   width: 150px;
-  background: #214d93;
+}
+.logo-slider-wrapper .container .row .logoSlider .swiper-slide {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.logo-slider-wrapper .container .row .logoSlider .swiper-slide img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  background-position: center;
 }
 .logo-slider-wrapper .container .row .logoSlider .slide-progress-bar {
   margin-top: 20px;
@@ -801,6 +819,34 @@ div#swiper-wrapper-1e10a7b644581ccac {
   width: 40%;
   margin: 0 auto;
   padding: 3em 0 0 0;
+}
+.logo-slider-wrapper .container .row .logoSlider .progress-bar {
+  display: block;
+  position: relative;
+  height: 10px;
+  width: 50%;
+  background-color: #000;
+  margin: auto;
+}
+.logo-slider-wrapper .container .row .logoSlider .progress-bar .progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%; /* Initially filled halfway */
+  background: #007bff;
+}
+.logo-slider-wrapper .container .row .logoSlider .swiper-pagination-progressbar {
+  position: absolute;
+  top: 400px; /* Adjust this value to position the progress bar */
+  left: 30%;
+  width: 40%;
+  height: 4px; /* Adjust the height of the progress bar */
+  background: #ccc; /* Background color of the progress bar container */
+}
+.logo-slider-wrapper .container .row .logoSlider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  height: 100%;
+  background: #007bff; /* Background color of the progress bar */
 }
 
 /*# sourceMappingURL=index.css.map */

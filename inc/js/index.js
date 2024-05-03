@@ -202,11 +202,17 @@ var ourWork = new Swiper(".ourWork", {
 var logoSlider = new Swiper(".logoSlider", {
   slidesPerView: 2,
       speed: 2000,
+      spaceBetween:20,
       grid: { rows: 1 },
-      scrollbar: {
-        el: ".collabCompanies__Slider .swiper-scrollbar",
-        draggable: true,
+      // scrollbar: {
+      //   el: ".collabCompanies__Slider .swiper-scrollbar",
+      //   draggable: true,
+      // },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar'
       },
+      
       breakpoints: {
         576: { slidesPerView: 3, grid: { rows: 2 } },
         768: { slidesPerView: 4, grid: { rows: 2 } },
