@@ -221,6 +221,10 @@ var logoSlider = new Swiper(".logoSlider", {
 });
 // Logo Slider
 
+// Faq
+
+// Faq
+
 });
 
 
