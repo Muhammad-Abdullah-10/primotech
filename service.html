@@ -63,19 +63,19 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="service.html">Services</a>
+              <a class="nav-link" href="service.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Case Studies</a>
+              <a class="nav-link">Case Studies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Careers</a>
+              <a class="nav-link">Careers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Blog</a>
+              <a class="nav-link">Blog</a>
             </li>
           </ul>
           <div class="rightbar-sec row">
@@ -2619,66 +2619,6 @@
     <!-- Scripts -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-
-        // function showTab(tabId) {
-        //   var tab = document.getElementById(tabId);
-        //   var tabContent = new bootstrap.Tab(tab);
-        //   tabContent.show();
-        // }
-
-        function toggleActiveInnerMenu(e) {
-          // console.log(e.target.parentElement);  
-          var innerMenus = document.querySelectorAll(".innerMenu .wordpress-plugin");
-          // innerMenus.forEach(function(innerMenu) {
-          //     if (innerMenu.classList.contains("active") && e.target.parentElement.classList.contains("active-clicked")) {
-          //         innerMenu.classList.remove("active");
-          //         console.log("Active Removed")
-          //     } else {
-          //         innerMenu.classList.add("active");
-          //         console.log("Active Added")
-          //     }
-          // });
-          if (e.target.parentElement.classList.contains("active-clicked")) {
-            // innerMenus.classList.remove("active");
-            console.log(innerMenus)
-            console.log("Active Removed");
-          } else {
-            innerMenus.classList.add("active");
-            console.log("Active Removed");
-          }
-        }
-
-        var cms = document.querySelector("#wordpress-cms");
-        var plugin = document.querySelector("#wordpress-plugin");
-        // console.log(cms)
-
-        // cms.addEventListener("click", function (e) {
-        //   if (
-        //     e.target &&
-        //     e.target.parentElement.getAttribute("id") === "wordpress-cms"
-        //   ) {
-        //     // console.log("mf worked again");
-        //     // console.log(e.target.parentNode);
-        //     // console.log(e.target.parentElement);
-        //     cms.classList.add("active-clicked");
-        //     var parent = cms.parentElement.parentElement;
-        //     console.log(parent)
-        //     toggleActiveInnerMenu(e);
-        //   }
-        // });
-
-        // plugin.addEventListener("click", function (e) {
-        //   if (
-        //     e.target &&
-        //     e.target.parentElement.getAttribute("id") === "wordpress-plugin"
-        //   ) {
-        //     // console.log("mf worked");
-        //     // console.log(e.target.parentNode);
-        //     // console.log(e.target.parentElement);
-        //     plugin.classList.add("active-clicked");
-        //     toggleActiveInnerMenu(e);
-        //   }
-        // });
 
         var swipercards = new Swiper(".slider-cards", {
           slidesPerView: 2,
