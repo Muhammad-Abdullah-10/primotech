@@ -72,10 +72,10 @@
               <a class="nav-link">Case Studies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Careers</a>
+              <a class="nav-link" href="careers.html">Careers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Blog</a>
+              <a class="nav-link disabled" href="blog.html">Blog</a>
             </li>
           </ul>
           <div class="rightbar-sec row">
@@ -953,6 +953,11 @@
      <script>
          
          document.addEventListener("DOMContentLoaded", function () {
+
+          
+        gsap.from(".navbar-nav", { opacity: 0, y: '-100%', duration: 1 ,ease : 'back.in'});
+        gsap.from(".logo-desktop", { opacity: 0, x: '-100%', duration: 1 ,ease : 'power1'});
+        gsap.from(".nav-item" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})
 
           var activetab =  document.querySelector('.tab-right-section .active');
           // activetab.parentElement.classList.add('test');
