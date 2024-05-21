@@ -3608,5 +3608,87 @@ div#swiper-wrapper-1e10a7b644581ccac {
     max-width: 100%;
   }
 }
+.blog-wrapper {
+  height: auto;
+  width: 100%;
+  padding: 5em 0;
+}
+.blog-wrapper .row-tab-btn {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.blog-wrapper .row-tab-btn ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.blog-wrapper .row-tab-btn ul .nav-tabs:hover, .blog-wrapper .row-tab-btn ul .nav:hover {
+  border: none;
+}
+.blog-wrapper .row-tab-btn ul .nav-tabs .nav-items:hover, .blog-wrapper .row-tab-btn ul .nav .nav-items:hover {
+  border: none;
+}
+.blog-wrapper .row-tab-btn ul .nav-tabs .nav-items .nav-link:hover, .blog-wrapper .row-tab-btn ul .nav .nav-items .nav-link:hover {
+  border: none;
+}
+.blog-wrapper .row-tab-btn ul .button-blog {
+  border-radius: 1.875em;
+  padding: 0;
+  outline: 0;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  margin: 10px 0.625em 10px 0;
+}
+.blog-wrapper .row-tab-btn ul .button-blog .active {
+  border-radius: 1.875em;
+  background: #e3204a;
+  color: #fff;
+}
+.blog-wrapper .row-tab-btn ul .button-blog:hover {
+  border-radius: 1.875em;
+  background: #e3204a;
+}
+.blog-wrapper .row-tab-btn ul .button-blog:hover a {
+  color: #fff;
+  border: none;
+}
+.blog-wrapper .row-tab-btn ul .button-blog a {
+  padding: 1.125em 3.125em;
+  color: #363636;
+  font-family: Montserrat, sans-serif;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1em;
+}
+.blog-wrapper .row-tab-data {
+  background-color: #000;
+  height: auto;
+}
+
+@media (max-width: 450px) {
+  .blog-wrapper .row-tab-btn {
+    margin: auto;
+  }
+  .blog-wrapper .row-tab-btn ul {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .blog-wrapper .row-tab-btn ul .button-blog {
+    margin: 10px 0;
+  }
+  .blog-wrapper .row-tab-btn ul .button-blog a {
+    padding: 1em 2em;
+    font-size: 1em;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
