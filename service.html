@@ -253,7 +253,7 @@
     <div class="serviceHoverList">
       <div class="container pt-5">
         <div class="row">
-          <div class="col-6 heading-width-s-list">
+          <div class="col-6 col-md-12 col-sm-12 heading-width-s-list">
             <h2 class="Generic-heading-s">
               Gravitate Towards
               <span>Unparalleled WordPress</span>
@@ -1815,8 +1815,8 @@
             </div>
             <div class="container-fluid service-slider-wrapper">
                 <div class="row">
-                    <div class="col-xl-7 left-slides">
-                        <div dir="rtl" class="swiper-container leftService">
+                    <div class="col-xl-7 col-lg-7 left-slides">
+                        <div  class="swiper-container leftService">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                 <div class="slide-img">
@@ -1864,7 +1864,7 @@
                             <!-- <div class="swiper-pagination"></div> -->
                           </div>
                     </div>
-                    <div class="col-xl-5 right-Service-slider">
+                    <div class="col-xl-5 col-lg-5 right-Service-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <h3 class="right-heading">One</h3>
@@ -2889,22 +2889,24 @@
 
             //LeftSerice
             var leftService = new Swiper(".leftService", {
-            slidesPerView:3,
+            slidesPerView:1,
             spaceBetween: 30,
-            // breakpoints: {
-            // 640: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20,
-            // },
-            // 768: {
-            //     slidesPerView: 4,
-            //     spaceBetween: 40,
-            // },
-            // 1024: {
-            //     slidesPerView: 5,
-            //     spaceBetween: 50,
-            // },
-            // },
+            mousewheel: false,
+              breakpoints:{
+              320:{
+                slidesPerView:1,
+                mousewheel: true,
+                freeMode:true
+              },
+              767:{
+                slidesPerView:1,
+                mousewheel: true,
+              },
+              992:{
+                slidesPerView:2
+              } 
+            },
+            
             
         });
             //RightService
@@ -2916,6 +2918,17 @@
             direction: "vertical",
             // centeredSlides: true,
             mousewheel: true,
+            // breakpoints:{
+            //   320:{
+            //     slidesPerView:1
+            //   },
+            //   640:{
+            //     slidesPerView:2
+            //   },
+            //   920:{
+            //     slidesPerView:3
+            //   }
+            // },
             // initialSlide: "1",
                // Navigation arrows
             navigation: {
