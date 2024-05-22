@@ -868,7 +868,7 @@ div#swiper-wrapper-1e10a7b644581ccac {
 }
 .overlay-faq-c-wrapper .row {
   width: 100vw;
-  height: 650px;
+  height: auto;
   margin: 50px 0;
 }
 .overlay-faq-c-wrapper .row-heading {
@@ -2237,7 +2237,7 @@ div#swiper-wrapper-1e10a7b644581ccac {
 .service-dev-wrapper {
   padding: 5em 0 5.5em;
   background: #edeef3;
-  height: 100vh;
+  height: auto;
 }
 .service-dev-wrapper::before {
   content: "";
@@ -2320,13 +2320,14 @@ div#swiper-wrapper-1e10a7b644581ccac {
 }
 .service-dev-wrapper .service-wrapper .service-slider-wrapper {
   position: relative;
-  height: 40vh;
+  height: auto;
   padding: 0px;
 }
 .service-dev-wrapper .service-wrapper .service-slider-wrapper .left-slides {
   padding: 0px;
-  height: 40vh;
-  overflow-x: hidden;
+  height: auto;
+  padding-bottom: 2em;
+  overflow: hidden;
 }
 .service-dev-wrapper .service-wrapper .service-slider-wrapper .left-slides .leftService .swiper-slide {
   height: 300px;
