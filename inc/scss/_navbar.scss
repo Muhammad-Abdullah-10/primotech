@@ -74,27 +74,27 @@
         width: 50px;
         background: #e3204a;
   
-        :hover {
-          left: 0;
-          width: 100%;
-          ::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 0;
-            height: 100%;
-            background: #fff;
-            left: auto;
-            transition: 0.5s;
-          }
-          svg {
-            path {
-              fill: #e3204a;
-              transition: 0.5s;
-            }
-          }
-        }
+        // :hover {
+        //   left: 0;
+        //   width: 100%;
+        //   ::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     width: 0;
+        //     height: 100%;
+        //     background: #fff;
+        //     left: auto;
+        //     transition: 0.5s;
+        //   }
+        //   svg {
+        //     path {
+        //       fill: #e3204a;
+        //       transition: 0.5s;
+        //     }
+        //   }
+        // }
         .icon {
           display: flex;
           align-items: center;

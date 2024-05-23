@@ -39,7 +39,7 @@
       <nav
         class="navbar navbar-expand-lg navbar-light sticky-top navbar-inverse"
       >
-        <a class="navbar-brand d-md-none d-xl-none d-lg-none" href="#"
+        <a class="navbar-brand d-md-none d-xl-none d-lg-none" href="index.html"
           ><img src="inc/img/primo-logo-white.png" alt=""
         /></a>
         <button
@@ -66,8 +66,8 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="service.html">Services</a>
+            <li  id="mega-menu"  class="nav-item">
+              <a class="nav-link"href="service.html">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link">Case Studies</a>
@@ -116,6 +116,7 @@
           <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
           <!-- <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button> -->
         </div>
+        <div class="mega-absolute"></div>
       </nav>
     </header>
     <!-- Header -->
@@ -399,6 +400,45 @@
       </div>
     </div>
     <!-- Swiper Slider -->
+    <div class="row wrapper-mobile-home d-xl-none d-lg-none d-md-none">
+      <div class="container">
+        <h3 class="service-heading">
+          Services
+        </h3>
+        <ul class="service-list">
+          <li class="single-service">
+            <a href="#">
+              Website Development
+            </a>
+          </li>
+          <li class="single-service">
+            <a href="#">
+              Mobile App Development
+            </a>
+          </li>
+          <li class="single-service">
+            <a href="#">
+              Digital Marketing
+            </a>
+          </li>
+          <li class="single-service">
+            <a href="#">
+              Digital Branding
+            </a>
+          </li>
+          <li class="single-service">
+            <a href="#">
+              UI/UX Design
+            </a>
+          </li>
+          <li class="single-service">
+            <a href="#">
+              Ecommerce Web Development
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Our Work -->
     <div class="wrapper-our-work">
@@ -1517,83 +1557,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="row">
-              <div class="col-lg-4 col-md-6 mb-4 mb-m d-0 bg-danger" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <h5 class="text-uppercase">Links</h5>
-        
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-dark">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-dark">Link 4</a>
-                </li>
-              </ul>
-              </div>            
-        
-              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">Links</h5>
-        
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#!" class="text-dark">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 4</a>
-                  </li>
-                </ul>
-              </div>
-        
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-        
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" class="text-dark">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 4</a>
-                  </li>
-                </ul>
-              </div>
-        
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0  ">
-                <h5 class="text-uppercase mb-0">Links</h5>
-        
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#!" class="text-dark">Link 1</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 2</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 4</a>
-                  </li>
-                </ul>
-              </div>
-            </div> -->
+            <div class="postion-absolute-footer"></div>
             <!-- <div class="footer-bg"></div> -->
           </div>
 
@@ -1624,6 +1588,22 @@
       
 document.addEventListener("DOMContentLoaded", function (event) {
 
+var megamenu = document.getElementById("mega-menu");
+var megaabsolute = document.getElementsByClassName("mega-absolute");
+
+megamenu.addEventListener('mouseover', function() {
+    // console.log("Hover in");
+    megaabsolute.classList.add('block')
+});
+
+megamenu.addEventListener('mouseout', function() {
+  megaabsolute.classList.remove('block')
+});
+megamenu.addEventListener('click', function() {
+  megaabsolute.classList.add('block')
+  alert('poppedup');
+});
+  
 gsap.from(".navbar-nav", { opacity: 0, y: '-100%', duration: 1 ,ease : 'back.in'});
 gsap.from(".logo-desktop", { opacity: 0, x: '-100%', duration: 1 ,ease : 'power1'});
 gsap.from(".nav-item" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})  
@@ -1790,13 +1770,28 @@ var ourWork = new Swiper(".ourWork", {
   breakpoints: {
      // when window width is >= 250px
      250: {
-      slidesPerView: 1,
-      spaceBetween:0
+      slidesPerView: 1.1,
+      spaceBetween:5
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 10
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 1,
+      slidesPerView: 1.8,
       spaceBetween: 10
+    },
+    // when window width is >= 767px
+    767: {
+      slidesPerView: 2.5,
+      spaceBetween: 20
+    },
+     // when window width is >= 810px
+    810: {
+      slidesPerView: 2.8,
+      spaceBetween: 20
     },
     // when window width is >= 991px
     991: {
@@ -1833,7 +1828,8 @@ var logoSlider = new Swiper(".logoSlider", {
       },
       
       breakpoints: {
-        576: { slidesPerView: 3, grid: { rows: 2 } },
+        320: { slidesPerView: 2, grid: { rows: 1 } },
+        500: { slidesPerView: 3, grid: { rows: 1 } },
         768: { slidesPerView: 4, grid: { rows: 2 } },
         1024: { slidesPerView: 7, grid: { rows: 2 } },
       },
@@ -1850,8 +1846,8 @@ var faqSlider = new Swiper(".faqSlider", {
      spaceBetween:0
    },
    540: {
-    slidesPerView: 2,
-    spaceBetween: 10
+    slidesPerView: 1.5,
+    spaceBetween: 5
   },
    // when window width is >= 640px
    640: {

@@ -38,7 +38,7 @@
       <nav
         class="navbar navbar-expand-lg navbar-light sticky-top navbar-inverse"
       >
-        <a class="navbar-brand d-md-none d-xl-none d-lg-none" href="#"
+        <a class="navbar-brand d-md-none d-xl-none d-lg-none" href="index.html"
           ><img src="inc/img/primo-logo-white.png" alt=""
         /></a>
         <button
@@ -123,7 +123,7 @@
     <div class="container-fluid banner-service-s">
       <div class="row data-row">
         <div class="wrapper-data">
-          <div class="col-xl-6 content-left">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 content-left">
             <h1 class="service-s-heading-banner">
               Crafting Stunning WordPress Websites
             </h1>
@@ -133,7 +133,7 @@
               content management.
             </h6>
           </div>
-          <div class="col-xl-6 form-right">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 form-right">
             <h3 class="form-heading">Have any question ?</h3>
             <form>
               <div class="form-row">
@@ -464,7 +464,7 @@
     <div class="wrapper-slider-s">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 left-slider">
+          <div class="col-xl-6 col-lg-6 col-md-12 left-slider ">
             <div class="heading-wrapper">
               <h2>
                 Your Go-To <span>Wordpress Development</span> Agency in Dubai
@@ -2641,10 +2641,10 @@
           // centeredSlides: true,
           //  effect: "fade",
           fadeEffect: { crossFade: false },
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+          // autoplay: {
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // },
           // centeredSlides: true,
           spaceBetween: 20,
           // grabCursor: true,
@@ -2662,12 +2662,22 @@
           freeMode:true,
           grabCursor: true,
           breakpoints: {
+            0: {
+              slidesPerView: 1,
+              // spaceBetween: 20,
+              // centeredSlides: true,
+            },
             320: {
               slidesPerView: 1,
               // spaceBetween: 20,
+              // centeredSlides: true,
             },
-            440: {
+            499:{
+              slidesPerView:1,
+            },
+            500: {
               slidesPerView: 2,
+              // centeredSlides: true,
               // spaceBetween: 20,
             },
             767: {
@@ -2702,9 +2712,13 @@
           // centeredSlides: true,
           spaceBetween: 0,
           grabCursor: true,
-          autoplay: true,
+          // autoplay: true,
           loop: true,
           breakpoints: {
+            0: {
+              slidesPerView: 1,
+              // spaceBetween: 20,
+            },
             320: {
               slidesPerView: 1,
               // spaceBetween: 20,
@@ -2713,8 +2727,14 @@
               slidesPerView: 1.5,
               // spaceBetween: 20,
             },
+            550:{
+              slidesPerView: 2,
+            },
+            670:{
+              slidesPerView: 2.2,
+            },
             767: {
-              slidesPerView: 2.5,
+              slidesPerView: 3,
               // spaceBetween: 20,
             },
             980: {
@@ -2722,7 +2742,7 @@
               // spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 3.5,
               // spaceBetween: 50,
             },
             1200: {
@@ -2756,7 +2776,7 @@
                 slidesPerView: 1,
                 spaceBetween:0
             },
-            540: {
+            500: {
                 slidesPerView: 2,
                 spaceBetween: 10
             },
