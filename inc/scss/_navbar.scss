@@ -1,6 +1,5 @@
 .banner-home-wrapper {
     width: 100vw;
-    // height: 1 0vh;
   }
   header {
     padding: 0px !important;
@@ -135,3 +134,170 @@
       }
     }
   }
+  
+
+
+  
+//MegaMenu
+.header.sticky{
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .5);
+  transition: .4s;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    .header_container{
+      padding: 0;
+      .header_wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .brand-logo{
+          height: 80px;
+          width: 20vw;
+          position: relative;
+          a{
+            min-height: 80px;
+          }
+          .brand_anchor_logo{
+            width: 20vw;
+            height: 80px;
+            transition: .4s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #363636;
+            padding: .5em .75em;
+            padding: 1.0625em 1.625em;
+            img{
+              height: 80px;
+            }
+          }
+        }
+        .navigation-wrapper{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          .navigation{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            .menu{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-end;
+              align-items: center;
+              max-width: 100%;
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              .menu_menuitem{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin: 0 3em 0 0;
+                
+                .active{
+                  color: #214d93;
+                }
+                .menu__menuitem--menulink{
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  font-size: 1em;
+                  font-weight: 500;
+                  font-family: Montserrat, sans-serif;
+                  line-height: 1;
+                  letter-spacing: -.03em;
+                  color: #fff;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  transition: .4s;
+                  padding: .75em 0 .75em 0
+                }
+              }
+              
+            }
+
+            .social-wrapper{
+              display: flex;
+              .anchor-wrapper{
+                display: flex;
+                a{
+                  min-width: 13.875em;
+                  padding: 0 1.75em;
+                  background: #fff;
+                  color: #214d93;
+                  font-size: 1em;
+                  font-weight: 700;
+                  transition: .5s;
+                  position: relative;
+                  width: 4em;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1em;
+                  font-weight: 700;
+                  
+                  &::before{
+                    background: #214d93;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 0;
+                    height: 100%;                    
+                    left: auto;
+                    transition: .5s;
+                  }
+                  &:hover{
+                    color: #fff;
+                    transition: .5s;
+                    &::before{
+                      left: 0;
+                      width: 100%;
+                    }
+                    span{
+                      color: #fff;
+                    }
+                  }
+                  
+                  span{
+                    width: 22ch;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    z-index: 1;
+                    color: #214d93;
+                  }
+                }
+              }
+              .whatsapp-anchor , .phone-anchor{
+               justify-content: flex-start;
+                max-width: 5em;
+                a{
+                  max-width: 5em;
+                  background: #214d93;
+                  // padding-left: 0;
+                  justify-content: flex-start;
+
+                  &:hover{
+                    &::before{
+                      background: #fff;
+                    }
+                  }
+                }
+                img{
+                  width: 1.625em;
+                  max-height: 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+//MegaMenu
