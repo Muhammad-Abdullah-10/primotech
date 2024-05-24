@@ -5225,10 +5225,10 @@ div#swiper-wrapper-1e10a7b644581ccac {
   background-color: rgba(0, 0, 0, .5);
   transition: .4s;
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
     .header_container{
       padding: 0;
       .header_wrapper{
@@ -5561,3 +5561,32 @@ div#swiper-wrapper-1e10a7b644581ccac {
   overflow: hidden;
 }
 // Convert CSS
+
+// Dropdownmenu
+.dropdown-menu-custom{
+  display: none;
+}
+.block {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 500px;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+  position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    margin: 0;
+    list-style-type: none;
+    z-index: 2;
+    background: linear-gradient(57.3deg, #4f1180 28.3%, #7b22c0 88.2%);
+    overflow: hidden;
+}
+header{
+  overflow: visible;
+}
+// Dropdownmenu

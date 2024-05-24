@@ -4895,7 +4895,7 @@ div#swiper-wrapper-1e10a7b644581ccac {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 1;
 }
 .header.sticky .header_container {
   padding: 0;
@@ -5208,6 +5208,35 @@ div#swiper-wrapper-1e10a7b644581ccac {
   z-index: 2;
   background: linear-gradient(57.3deg, #4f1180 28.3%, #7b22c0 88.2%);
   overflow: hidden;
+}
+
+.dropdown-menu-custom {
+  display: none;
+}
+
+.block {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 500px;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  margin: 0;
+  list-style-type: none;
+  z-index: 2;
+  background: linear-gradient(57.3deg, #4f1180 28.3%, #7b22c0 88.2%);
+  overflow: hidden;
+}
+
+header {
+  overflow: visible;
 }
 
 /*# sourceMappingURL=index.css.map */

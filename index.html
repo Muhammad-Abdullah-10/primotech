@@ -128,27 +128,25 @@
           </div>
           <div class="navigation-wrapper">
             <nav class="navigation">
-              <ul class="menu nav">
-                <li class="nav-item menu__menuitem active">
+              <ul class="menu">
+                <li class="menu__menuitem active">
                   <a href="index.html" class="menu__menuitem--menulink active">Home</a>
                 </li>
-                <li class="nav-item  menu__menuitem">
+                <li class="menu__menuitem">
                   <a href="about.html" class="menu__menuitem--menulink">About</a>
                 </li>
-                <li class="nav-item dropdown menu__menuitem dropdown show">
-                  <a href="service.html" class="nav-link dropdown-toggle menu__menuitem--menulink" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                  
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              
+                <li class="menu__menuitem service-hover">
+                  <a href="service.html" class="menu__menuitem--menulink">Services</a>
+                  <div class="dropdown-menu-custom">
+                     <div class="menu-slider-wrapper">
+                      
+                     </div>
+                  </div>
                 </li>
-                <li class="nav-item menu__menuitem">
+                <li class="menu__menuitem">
                   <a href="careers.html" class="menu__menuitem--menulink">Careers</a>
                 </li>
-                <li class="nav-item menu__menuitem">
+                <li class="menu__menuitem">
                   <a href="blog.html" class="menu__menuitem--menulink">Blog</a>
                 </li>
               </ul>
@@ -1648,24 +1646,26 @@
       
 document.addEventListener("DOMContentLoaded", function (event) {
 
-// var megamenu = document.getElementById("mega-menu");
-// var megaabsolute = document.getElementsByClassName("mega-absolute");
+var megamenu = document.querySelector(".service-hover");
+var megablock = document.querySelector(".dropdown-menu-custom");
 
-// megamenu.addEventListener('mouseover', function() {    
-//     megaabsolute.classList.add('block')
-// });
+megamenu.addEventListener('mouseover', function() {    
+  megablock.classList.add('block')
+  console.log(megablock);
+});
 
-// megamenu.addEventListener('mouseout', function() {
-//   megaabsolute.classList.remove('block')
-// });
+megamenu.addEventListener('mouseout', function() {
+  megablock.classList.remove('block')
+  console.log("Mouse Out");
+});
 // megamenu.addEventListener('click', function() {
 //   megaabsolute.classList.add('block')
 //   alert('poppedup');
 // });
   
-gsap.from(".navbar-nav", { opacity: 0, y: '-100%', duration: 1 ,ease : 'back.in'});
-gsap.from(".logo-desktop", { opacity: 0, x: '-100%', duration: 1 ,ease : 'power1'});
-gsap.from(".nav-item" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})  
+// gsap.from(".menu__menuitem", { opacity: 0, y: '-100%', duration: 1 ,ease : 'back.in'});
+// gsap.from(".logo-desktop", { opacity: 0, x: '-100%', duration: 1 ,ease : 'power1'});
+gsap.from(".menu__menuitem" , { duration: 1 , opacity: 0 , delay : 1 ,stagger : .2})  
 
 var verticalSwiper = new Swiper(".services-thumb-slider", {
   slidesPerView: 5,
@@ -1998,8 +1998,6 @@ const getHoverDirection = function (event) {
     </script>
      <!-- Scripts -->
      <script src="node_modules/jquery/dist/jquery.min.js"></script>
-     <!-- Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
      <script src="node_modules/swiper/swiper.js"></script>
@@ -2011,7 +2009,6 @@ const getHoverDirection = function (event) {
      <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
        <script src="inc/js/index.js"></script>
      <script src="inc/js/faq.js"></script>
-     
      <!-- Scripts -->
   </body>
 </html>
